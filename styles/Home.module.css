@@ -9,12 +9,11 @@
 }
 
 .main {
-  flex: 1;
-  
+  flex: 1; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(0,1,26);
+  background: linear-gradient(180deg, rgba(0,1,26,1) 50%, rgba(170,158,201,1) 100%);
   color: white;
   font-size: 20px;
 }
@@ -102,6 +101,9 @@
 }
 
 .middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px 200px 200px;
   padding-bottom: 100px;
   background: rgb(0,1,26);
   background: linear-gradient(180deg, rgba(0,1,26,1) 0%, rgba(170,158,201,1) 100%);
@@ -117,48 +119,54 @@
 }
 
 .aboutDiv {
-  text-align: center;
-  margin: 50px auto;
-  width: 50%;
+  text-align: center; 
   line-height: 2;
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-column-end: 8;
 }
 
 .campingDiv {
-  margin: 50px auto 100px auto;
-  width: 50%;
   line-height: 2;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row: 2;
 }
 
 .wonderDiv {
-  margin: 50px auto 100px auto;
-  width: 50%;
-  text-align: right;
   line-height: 2;
+  grid-row: 3;
+  grid-column-start: 7;
+  grid-column-end: 11;
 }
 
 .frogDiv {
-  margin: 50px auto 100px auto;
-  width: 50%;
   line-height: 2;
+  grid-row: 4;
+  grid-column-start: 7;
+  grid-column-end: 11;
 }
 
 .profDiv {
-  text-align: right;
+  text-align: center;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row: 7;
 }
 
 .connectP {
-  display: inline-block;
-  width: 45%;
   margin-top: 70px;
-  margin-right: 5px;
+  line-height: 2;
 }
 
 .profpic {
-  position: relative;
-  float: right;
-  width: 15%;
-  margin-right: 50px;
+  width: 200%;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 7;
 }
+
 .footer {
   width: 100%;
   height: 100px;
@@ -174,9 +182,7 @@
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 10px;
 }
 
 @media (max-width: 600px) {
