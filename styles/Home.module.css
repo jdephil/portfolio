@@ -83,13 +83,13 @@
 }
 
 @keyframes forestBright {
-  from {filter: brightness(.05);}
+  from {filter: brightness(.03);}
   to {filter: brightness(1);}
 }
 
 
 .forestImg {
-  filter: brightness(.05);
+  filter: brightness(.03);
   animation-name: forestBright;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -108,10 +108,10 @@
 
 .middle {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 329px 364px 352px 260px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
   background: rgb(0,1,26);
-  background: linear-gradient(180deg, rgba(0,1,26,1) 0%, rgba(170,158,201,1) 100%);
+  background: linear-gradient(180deg, rgba(0,1,26,1) 20%, rgba(170,158,201,1) 100%);
   position: relative;
 }
 
@@ -122,26 +122,32 @@
 
 .pdDiv {
   position: sticky;
-  top: 0px;
-  grid-column: 1 / 4;
-  grid-row: 1;
-  justify-self: center;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  top: 150px;
+  z-index: 1;
 }
 
 .purpleDiamonds {
   position: absolute;
+  width: 100%;
 }
 
 
 .bdDiv {
   position: sticky;
-  top: 150px;
+  top: 0px;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  
   
 }
 
 .blackDiamonds {
   position: absolute;
+  width: 100%;
 }
+
 
 .aboutDiv {
   text-align: center; 
@@ -150,7 +156,7 @@
   grid-column: 3 / 9;
   font-family: 'Eczar', serif;
   letter-spacing: .05em;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .campingImgDiv {
@@ -170,12 +176,14 @@
   grid-column-end: 11;
   grid-row: 2;
   margin-right: 60px;
+  align-self: center;
 }
 
 .wowImgDiv {
   grid-column: 4 / 8;
   grid-row: 3;
   align-self: center;
+  margin-bottom: 100px;
 }
 
 .wowImg {
@@ -188,12 +196,14 @@
   grid-column-start: 8;
   grid-column-end: 11;
   margin-right: 60px;
+  
 }
 
 .frogImgDiv {
   grid-column: 4 / 8;
   grid-row: 4;
   align-self: center;
+  margin-bottom: 70px;
 }
 
 .frogImg {
@@ -206,6 +216,9 @@
   grid-column-start: 8;
   grid-column-end: 11;
   margin-right: 60px;
+  position: relative;
+  bottom: 40px;
+  
 }
 
 .linkDiv {
@@ -254,8 +267,8 @@
   grid-row: 6;
   font-family: 'Eczar', serif;
   letter-spacing: .05em;
-  font-size: 1.3em;
-  line-height: 2;
+  font-size: 1.2em;
+  margin-right: 20px;
 }
 
 
@@ -282,6 +295,12 @@
 
 .footer a {
   padding: 0 10px;
+}
+
+.copyright {
+  position: absolute;
+  margin-top: 62px;
+  font-size: 12px;
 }
 
 @media (max-width: 600px) {

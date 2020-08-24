@@ -7,9 +7,9 @@ export default function Middle() {
       <div className={styles.pdDiv}>
         <img className={styles.purpDiamonds} src="/purpleDiamonds.png" alt="purple diamonds" />
       </div>
-      {/* <div className={styles.bdDiv}>
-        <img className={styles.blackDiamonds} src="/blackDiamonds.png" alt="black diamonds" />
-      </div> */}
+      <div className={styles.bdDiv}>
+        <img className={styles.blackDiamonds} src="/blackDiamonds2.png" alt="black diamonds" />
+      </div>
       <div className={styles.aboutDiv}>
         <p> 
           I use my passion for telling stories and building projects to design cohesive websites that truly represent the brands they are created for. 
