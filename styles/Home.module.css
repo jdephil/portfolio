@@ -76,7 +76,7 @@
   width: 15.25%;
   position: absolute;
   animation-name: sunBright;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-delay: 1s;
   filter: brightness(.5);
@@ -92,7 +92,7 @@
 .forestImg {
   filter: brightness(.05);
   animation-name: forestBright;
-  animation-duration: 6s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
   width: 100%;
@@ -110,37 +110,77 @@
 .middle {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px 200px 200px 200px;
+  grid-template-rows: 200px 239px 325px 272px 200px;
   padding-bottom: 100px;
   background: rgb(0,1,26);
   background: linear-gradient(180deg, rgba(0,1,26,1) 0%, rgba(170,158,201,1) 100%);
+  position: relative;
 }
 
-.purpDiamonds {
+
+.p {
+  line-height: 2;
+}
+
+.pdDiv {
+  position: sticky;
+  top: 0px;
+  grid-column: 1 / 4;
+  grid-row: 1;
+  justify-self: center;
+}
+
+.purpleDiamonds {
   position: absolute;
+}
+
+
+.bdDiv {
+  position: sticky;
+  top: 150px;
+  
 }
 
 .blackDiamonds {
   position: absolute;
-  margin-top: 150px;
 }
 
 .aboutDiv {
   text-align: center; 
   line-height: 2;
   grid-row-start: 1;
-  grid-column-start: 4;
-  grid-column-end: 8;
+  grid-column: 3 / 9;
   font-family: 'Eczar', serif;
   letter-spacing: .05em;
   font-size: 1.3em;
 }
 
+.campingImgDiv {
+  grid-column: 4 / 7;
+  grid-row: 2;
+  align-self: center;
+}
+
+.campingImg {
+  width: 90%;
+}
+
+
 .campingDiv {
-  line-height: 2;
+  
   grid-column-start: 7;
   grid-column-end: 11;
   grid-row: 2;
+}
+
+.wowImgDiv {
+  grid-column: 4 / 7;
+  grid-row: 3;
+  align-self: center;
+}
+
+.wowImg {
+  width: 90%;
 }
 
 .wonderDiv {
@@ -150,6 +190,16 @@
   grid-column-end: 11;
 }
 
+.frogImgDiv {
+  grid-column: 4 / 7;
+  grid-row: 4;
+  align-self: center;
+}
+
+.frogImg {
+  width: 90%;
+}
+
 .frogDiv {
   line-height: 2;
   grid-row: 4;
@@ -157,24 +207,51 @@
   grid-column-end: 11;
 }
 
-.profDiv {
-  text-align: center;
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row: 7;
+.linkDiv {
+  width: fit-content;
 }
 
-.connectP {
-  margin-top: 70px;
+.a {
+  border-bottom: 3px solid white;
+  transition: all 0.25s linear;
+  position: relative;
+}
+
+.a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* this is to match where the border is */
+  transform-origin: left; 
+  transform: scale(0);
+  transition: 0.25s linear;
+/*   will-change: transform; */
+}
+
+.a:hover:before {
+  transform: scale(1);
+}
+
+.profDiv {
+  text-align: center;
+  grid-column: 4 / 8;
+  grid-row: 6;
+  font-family: 'Eczar', serif;
+  letter-spacing: .05em;
+  font-size: 1.3em;
   line-height: 2;
 }
 
+
 .profpic {
   width: 200%;
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 5;
-  grid-row-end: 7;
+  grid-column: 5 / 6;
+  grid-row-start: 7;
+  
 }
 
 .footer {
