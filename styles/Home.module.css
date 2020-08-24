@@ -23,15 +23,20 @@
   grid-template-columns: 1.5fr 1.5fr 1.43fr 2fr 1fr 1fr 1fr 1fr;
   grid-template-rows: .80fr 1fr 1fr;
   justify-content: center;
-  
+ 
  
 }
 
 .jenDiv {
-  grid-column: 2;
-  grid-row: 1;
-  align-self: center;
-  font-size: 1.5em;
+  grid-column: 2/5;
+    grid-row: 1;
+    align-self: center;
+    font-size: 2em;
+    position: relative;
+    right: 111px;
+    bottom: 66px;
+    letter-spacing: .055em; 
+  
 
 }
 
@@ -39,6 +44,7 @@
   grid-column: 5;
   grid-row: 1;
   align-self: center;
+  font-size: .95em
 }
 
 .h1 {
@@ -46,6 +52,7 @@
   position: absolute;
   color: white;
   z-index: 3;
+  font-family: 'Eczar', serif;
 }
 
 .h2 {
@@ -124,6 +131,9 @@
   grid-row-start: 1;
   grid-column-start: 4;
   grid-column-end: 8;
+  font-family: 'Eczar', serif;
+  letter-spacing: .05em;
+  font-size: 1.3em;
 }
 
 .campingDiv {
