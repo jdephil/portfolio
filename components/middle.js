@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css'
+import LanguageIcons from './LanguageIcons'
 
 export default function Middle() {
   return (
@@ -30,7 +31,7 @@ export default function Middle() {
         <div className={styles.linkDiv}>
          <a href='https://loving-williams-21d7ec.netlify.app/' ><h3 className={styles.a}>World of Wonder</h3></a>
         </div>
-        <p>Escape for the day into our virtual museum, exploring different artifacts and cultures. Take notes in your journal and curate a collection of your own. A group project of 3 other developers, created with React and MongoDB, styled with Materialize and CSS.</p>
+        <p>Escape for the day into our virtual museum, exploring different artifacts and cultures. Take notes in your journal and curate a collection of your own. A group project with 3 other developers, created with React and MongoDB, styled with Materialize and CSS.</p>
       </div>
       <div className={styles.frogImgDiv}>
         <img className={styles.frogImg} src='/projects/frogStory.png' alt='frog story' />
@@ -41,6 +42,7 @@ export default function Middle() {
         </div>
         <p>A choose-your-own-adventure game about a lonely, little frog. Created with vanilla Javascript, CSS, and HTML.</p>
       </div>
+      <LanguageIcons />
       <div className={styles.profDiv}>
         <p className={styles.connectP}>I would love to help you merge good design with functional code. Connect with me on one of the platforms below!</p>
       </div>
