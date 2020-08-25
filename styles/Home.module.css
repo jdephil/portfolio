@@ -41,7 +41,7 @@
   z-index: 1;
 }
 
-.purpleDiamonds {
+.purpDiamonds {
   position: absolute;
   width: 100%;
 }
@@ -217,9 +217,142 @@
   font-size: 12px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 769px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+
+  .aboutDiv {
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+
+  .campingImg {
+    width: 100%;
+  }
+  .campingDiv {
+    grid-column: 4 / 9;
+    grid-row: 3;
+    text-align: center;
+    
+  }
+
+  .wowImgDiv {
+    grid-row: 4;
+    margin-bottom: 0px;
+  }
+
+  .wowImg {
+    width: 100%;
+  }
+
+  .wonderDiv {
+    grid-column: 4/9;
+    grid-row: 5;
+    text-align: center;
+  }
+
+  .frogImgDiv{
+    grid-row: 7;
+    margin-bottom: 0px;
+  }
+
+  .frogImg {
+    width: 100%;
+  }
+
+  .frogDiv {
+    grid-column: 4/9;
+    grid-row: 8;
+    text-align: center;
+    bottom: 0px;
+  }
+
+  .linkDiv {
+    margin: 0 auto;
+  }
+
+  .svgDiv{
+    grid-row: 9;
+    margin-left: 30px
+  }
+
+  .profDiv {
+    grid-row: 10;
+    letter-spacing: 0px;
+    font-size: 1em;
+    margin-right: 0px;
+  }
+
+  .profpic {
+    grid-row: 11;
+  }
+
+}
+
+@media (max-width: 451px) {
+  .main {
+    font-size: 13px;
+  }
+  
+  .pdDiv {
+    visibility: hidden;
+  }
+
+  .bdDiv{
+    visibility: hidden;
+  }
+
+  .aboutDiv {
+    grid-column: 2 / 10;
+    font-size: 1em;
+    letter-spacing: .1em;
+  }
+
+  .campingImgDiv {
+    grid-column: 2/10;
+  }
+
+ 
+  .campingDiv {
+    grid-column: 2 / 10;
+    margin-right: 0px;
+    
+  }
+
+  .wowImgDiv {
+    grid-column: 2 / 10;
+  }
+
+  
+
+  .wonderDiv {
+    grid-column: 2 / 10;
+    margin-right: 0px;
+  }
+
+  .frogImgDiv{
+    grid-column: 2 / 10;
+  }
+
+ 
+  .frogDiv {
+    grid-column: 2 / 10;
+    margin-right: 0px;
+  }
+
+  .svgDiv{
+    grid-column: 2 / 10;
+  }
+
+  .profDiv {
+    grid-column: 2 / 10;
+  }
+
+  .profpic {
+    width: 100%;
+    grid-column: 4 / 8;
+  }
+
 }
