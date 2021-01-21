@@ -266,18 +266,53 @@
     margin-bottom: 30px;
   }
 
+  .decoImgDiv {
+    grid-row: 2;
+    margin-bottom: 0px;
+  }
+
+  .decoImg {
+    width: 100%;
+  }
+
+  .decoDiv {
+    grid-column: 4/9;
+    grid-row: 3;
+    text-align: center;
+  }
+
+  .scibubImgDiv {
+    grid-row: 4;
+    margin-bottom: 0px;
+  }
+
+  .scibubImg {
+    width: 100%;
+  }
+
+  .scibubDiv {
+    grid-column: 4/9;
+    grid-row: 5;
+    text-align: center;
+  }
+
+  .campingImgDiv {
+    grid-row: 6;
+    margin-bottom: 0px;
+  }
+
   .campingImg {
     width: 100%;
   }
   .campingDiv {
     grid-column: 4 / 9;
-    grid-row: 3;
+    grid-row: 7;
     text-align: center;
     
   }
 
   .wowImgDiv {
-    grid-row: 4;
+    grid-row: 8;
     margin-bottom: 0px;
   }
 
@@ -287,12 +322,12 @@
 
   .wonderDiv {
     grid-column: 4/9;
-    grid-row: 5;
+    grid-row: 9;
     text-align: center;
   }
 
   .frogImgDiv{
-    grid-row: 7;
+    grid-row: 10;
     margin-bottom: 0px;
   }
 
@@ -302,7 +337,7 @@
 
   .frogDiv {
     grid-column: 4/9;
-    grid-row: 8;
+    grid-row: 11;
     text-align: center;
     bottom: 0px;
   }
@@ -312,19 +347,19 @@
   }
 
   .svgDiv{
-    grid-row: 9;
+    grid-row: 12;
     margin-left: 30px
   }
 
   .profDiv {
-    grid-row: 10;
+    grid-row: 13;
     letter-spacing: 0px;
     font-size: 1em;
     margin-right: 0px;
   }
 
   .profpic {
-    grid-row: 11;
+    grid-row: 14;
   }
 
 }
@@ -347,6 +382,29 @@
     font-size: 1em;
     letter-spacing: .1em;
   }
+
+  .decoImgDiv {
+    grid-column: 2/10;
+  }
+
+ 
+  .decoDiv {
+    grid-column: 2 / 10;
+    margin-right: 0px;
+    
+  }
+
+  .scibubImgDiv {
+    grid-column: 2/10;
+  }
+
+ 
+  .scibubDiv {
+    grid-column: 2 / 10;
+    margin-right: 0px;
+    
+  }
+
 
   .campingImgDiv {
     grid-column: 2/10;
