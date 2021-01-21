@@ -72,30 +72,68 @@
   font-size: 1.5em;
 }
 
+.decoImgDiv {
+  grid-row: 2;
+  grid-column: 4 / 8;
+  align-self: center;
+  margin: 10px 0;
+}
+
+.decoImg {
+  width: 90%;
+}
+
+.decoDiv {
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row: 2;
+  margin-right: 60px;
+  align-self: center;
+
+}
+
+.scibubImgDiv {
+  grid-row: 3;
+  grid-column: 4 / 8;
+  align-self: center;
+  margin: 10px 0;
+}
+
+.scibubImg {
+  width: 90%
+}
+
+.scibubDiv {
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row: 3;
+  margin-right: 60px;
+  align-self: center;
+}
 .campingImgDiv {
   grid-column: 4 / 8;
-  grid-row: 2;
+  grid-row: 4;
   align-self: center;
+  margin: 10px 0;
 }
 
 .campingImg {
   width: 90%;
 }
 
-
 .campingDiv {
-  
   grid-column-start: 8;
   grid-column-end: 11;
-  grid-row: 2;
+  grid-row: 4;
   margin-right: 60px;
   align-self: center;
 }
 
 .wowImgDiv {
   grid-column: 4 / 8;
-  grid-row: 3;
+  grid-row: 5;
   align-self: center;
+  margin: 10px 0;
  
 }
 
@@ -105,7 +143,7 @@
 
 .wonderDiv {
   line-height: 2;
-  grid-row: 3;
+  grid-row: 5;
   grid-column-start: 8;
   grid-column-end: 11;
   margin-right: 60px;
@@ -114,7 +152,7 @@
 
 .frogImgDiv {
   grid-column: 4 / 8;
-  grid-row: 4;
+  grid-row: 6;
   align-self: center;
   margin-bottom: 70px;
 }
@@ -125,7 +163,7 @@
 
 .frogDiv {
   line-height: 2;
-  grid-row: 4;
+  grid-row: 6;
   grid-column-start: 8;
   grid-column-end: 11;
   margin-right: 60px;
@@ -165,7 +203,7 @@
 }
 
 .svgDiv {
-  grid-row: 5;
+  grid-row: 7;
   grid-column: 4 / 8;
   align-self: center;
 }
@@ -178,7 +216,7 @@
 .profDiv {
   text-align: center;
   grid-column: 4 / 8;
-  grid-row: 6;
+  grid-row: 8;
   font-family: 'Eczar', serif;
   letter-spacing: .05em;
   font-size: 1.2em;
@@ -189,7 +227,7 @@
 .profpic {
   width: 200%;
   grid-column: 5 / 6;
-  grid-row-start: 7;
+  grid-row-start: 9;
   
 }
 

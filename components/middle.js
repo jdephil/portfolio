@@ -15,6 +15,24 @@ export default function Middle() {
           I use my passion for telling stories and building projects to design cohesive websites that truly represent the brands they are created for. 
         </p>
       </div>
+      <div className={styles.decoImgDiv}>
+        <img className={styles.decoImg} src='/projects/decoMiami.png' alt='deco miami project' />
+      </div>
+      <div className={styles.decoDiv}>
+        <div className={styles.linkDiv}>
+          <a href='https://jdephil.github.io/deco-miami/' ><h3 className={styles.a}>Deco Miami</h3></a>
+        </div>
+        <p className={styles.p}>Interactive homepage section created for Shopify using JavaScript, SCSS/SASS, and GSAP.</p>
+      </div>
+      <div className={styles.scibubImgDiv}>
+        <img className={styles.scibubImg} src='/projects/scibub.png' alt='scibub project' />
+      </div>
+      <div className={styles.scibubDiv}>
+        <div className={styles.linkDiv}>
+          <a href='http://scibub.herokuapp.com/' ><h3 className={styles.a}>Scibub</h3></a>
+        </div>
+        <p className={styles.p}>A short animation about Photosynthesis. Built with React, Typescript, and GSAP.</p>
+      </div>
       <div className={styles.campingImgDiv}>
         <img className={styles.campingImg} src='/projects/campingTrip.png' alt='camping trip project' />
       </div>
@@ -44,7 +62,7 @@ export default function Middle() {
       </div>
       <LanguageIcons />
       <div className={styles.profDiv}>
-        <p className={styles.connectP}>I would love to help you merge good design with functional code. Connect with me on one of the platforms below!</p>
+        <p className={styles.connectP}>I would love to help you merge creative design with functional code. Connect with me on one of the platforms below!</p>
       </div>
       <img className={styles.profpic} src="/profpic.png" alt="pic of Jennifer" />
     </div>
